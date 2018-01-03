@@ -1,0 +1,164 @@
+.my-web {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.my-container {
+    padding-top: 56px;
+    padding-left: 0;
+    padding-right: 0;
+    height: 100%;
+    width: 100%;
+
+}
+
+.my-content {
+    padding: 0;
+    height: 100%;
+}
+
+.my-content-without-side-bar-full{
+    padding-left: 80px;
+}
+
+.my-content-with-side-bar-full{
+    padding-left: 180px;
+}
+
+.my-content-with-side-chat-on{
+    padding-right: 250px;
+}
+
+.my-content-with-side-chat-off{
+    padding-right: 0;
+}
+
+.my-sidebar {
+    position: fixed;
+    height: 100%;
+    float: left;
+    padding: 0;
+    margin: 0;
+    transition: 0.5s;
+    background-color: #814193;
+}
+
+.my-sidebar-full{
+    width: 180px;
+}
+
+.my-sidebar-not-full{
+    width: 80px;
+}
+
+/* Style the tab */
+.tab {
+    float: left;
+    background-color: inherit;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: #ffffff;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0 12px;
+    border: 1px solid #ccc;
+    width: 100%;
+    border-left: none;
+    height: 300px;
+}
+
+.my-side-chat {
+    height: 100%;
+    margin-top: 56px;
+    float: right;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.my-side-chat-on{
+    width: 250px;
+}
+
+.my-side-chat-off{
+    width: 0px;
+}
+
+.my-side-chat a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.my-side-chat a:hover {
+    color: #f1f1f1;
+}
+
+.my-side-chat .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.lets-chat-btn{
+    cursor: pointer;
+    font-size: 19px;
+    color: #ffffff;
+}
+
+
+@media screen and (max-height: 450px) {
+    .my-side-chat {
+        padding-top: 15px;
+    }
+
+    .my-side-chat a {
+        font-size: 18px;
+    }
+}
+
+/* file size: 1.1ko | optimized file size: 1.1ko | base64 size: 1.5ko */
+.peacock-brand {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNjEyIj4gIDxnIHNvZGlwb2RpOmRvY25hbWU9InR3aXR0ZXJfYm9vdHN0cmFwX2xvZ28uc3ZnIiBpbmtzY2FwZTp2ZXJzaW9uPSIwLjQ4LjEgcjk3NjAiIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnNvZGlwb2RpPSJodHRwOi8vc29kaXBvZGkuc291cmNlZm9yZ2UubmV0L0RURC9zb2RpcG9kaS0wLmR0ZCIgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIj4gICAgPHBhdGggZmlsbD0iIzU2M0Q3QyIgZD0iTTYxMiA1MTBjMCA1Ni4xLTQ1LjkgMTAyLTEwMiAxMDJIMTAyQzQ1LjkgNjEyIDAgNTY2LjEgMCA1MTBWMTAyQzAgNDUuOSA0NS45IDAgMTAyIDBoNDA4YzU2LjEgMCAxMDIgNDUuOSAxMDIgMTAydjQwOHoiLz4gICAgPHBhdGggZmlsbD0iI0ZGRiIgZD0iTTE2Ni4zIDEzM2gxNzMuNWMzMiAwIDU3LjcgNy4zIDc3IDIyczI5IDM2LjggMjkgNjYuNWMwIDE4LTQuNCAzMy40LTEzLjIgNDYuMi04LjggMTIuOC0yMS40IDIyLjgtMzcuOCAyOS44djFjMjIgNC43IDM4LjcgMTUuMSA1MCAzMS4yIDExLjMgMTYuMiAxNyAzNi40IDE3IDYwLjggMCAxNC0yLjUgMjcuMS03LjUgMzkuMi01IDEyLjItMTIuOCAyMi43LTIzLjUgMzEuNXMtMjQuMyAxNS44LTQxIDIxLTM2LjUgNy44LTU5LjUgNy44aC0xNjRWMTMzem02Mi41IDE0OS41aDEwMmMxNSAwIDI3LjUtNC4yIDM3LjUtMTIuOHMxNS0yMC44IDE1LTM2LjhjMC0xOC00LjUtMzAuNy0xMy41LTM4cy0yMi0xMS0zOS0xMWgtMTAydjk4LjZ6bTAgMTU2LjVoMTEwLjVjMTkgMCAzMy44LTQuOSA0NC4yLTE0LjggMTAuNS05LjggMTUuOC0yMy44IDE1LjgtNDEuOCAwLTE3LjctNS4yLTMxLjItMTUuOC00MC44cy0yNS4yLTE0LjItNDQuMi0xNC4ySDIyOC44VjQzOXoiLz4gIDwvZz48L3N2Zz4=);
+}
