@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
-import {Container, Row, Col} from 'reactstrap';
+import './MainPageItemStyle.css';
+import {Container} from 'reactstrap';
 
 export class SidebarItem extends React.Component {
     render() {
@@ -12,10 +13,7 @@ export class SidebarItem extends React.Component {
                     <button onclick="openCity(event, 'London')" id="defaultOpen">All files</button>
                     <button onclick="openCity(event, 'Paris')">Photos</button>
                     <button onclick="openCity(event, 'Tokyo')">Docs</button>
-                    <button onclick="openCity(event, 'Tokyo')">Videos</button>
-                    <button onclick="openCity(event, 'Tokyo')">Torrents</button>
-                    <button onclick="openCity(event, 'Tokyo')">Apps</button>
-                    <button onclick="openCity(event, 'Tokyo')">Others</button>
+                    <img></img>
                     <button onClick={this.props.onClick}>&lt;==</button>
                 </div>
             </Container>
