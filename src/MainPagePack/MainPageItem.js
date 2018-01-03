@@ -1,10 +1,9 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import './MainPageItemStyle.css';
-import {Container, Row, Col} from 'reactstrap';
+import {Container, Row} from 'reactstrap';
 
-import {SideBarItem} from './SideBarItem.js';
+import {SidebarItem} from './SidebarItem.js';
 import {NavigationItem} from './NavigationItem.js';
 import {SideChatPage} from '../SideChatPagePack/SideChatPage.js';
 
@@ -42,11 +41,10 @@ export class MainPageItem extends React.Component {
 }
 
 
-
 function MyContainer(props) {
     return (
         <Container fluid={true} className={'my-container'}>
-            <SideBarItem isSideBarFull={props.isSideBarFull} onClick={props.onClick}/>
+            <SidebarItem isSideBarFull={props.isSideBarFull} onClick={props.onClick}/>
             <MyContent isSideChatTurnedOn={props.isSideChatTurnedOn}
                        isSideBarFull={props.isSideBarFull}/>
             <SideChatPage isSideChatTurnedOn={props.isSideChatTurnedOn}/>

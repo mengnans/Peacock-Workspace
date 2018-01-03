@@ -1,0 +1,17 @@
+.my-sidebar {
+    position: fixed;
+    height: 100%;
+    float: left;
+    padding: 0;
+    margin: 0;
+    transition: 0.5s;
+    background-color: #814193;
+}
+
+.my-sidebar-full {
+    width: 140px;
+}
+
+.my-sidebar-not-full {
+    width: 80px;
+}

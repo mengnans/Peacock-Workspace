@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import {Container, Row, Col} from 'reactstrap';
 
-export class SideBarItem extends React.Component {
+export class SidebarItem extends React.Component {
     render() {
         const sideBar = this.props.isSideBarFull ? 'my-sidebar-full' : 'my-sidebar-not-full';
         const classes = `my-sidebar ${sideBar}`;
