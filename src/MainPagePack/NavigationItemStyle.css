@@ -1,0 +1,34 @@
+.lets-chat-btn {
+    cursor: pointer;
+    font-size: 19px;
+    color: #ffffff;
+}
+
+.navContainer {
+    color: #ffffff;
+
+    background-color: #1F5C87;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 48px;
+    z-index: 1030;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navLogoArea {
+    width: 36px;
+    height: 48px;
+    background: #4882AB;
+}
+
+.navLogo {
+    position: absolute;
+    left: 6px;
+    top: 12px;
+    width: 24px;
+    height: 24px;
+    background: url("../img/MainPagePack/imgLogo.png");
+}

@@ -1,14 +1,16 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
+import './NavigationItemStyle.css';
 
 export class NavigationItem extends React.Component {
     render() {
         return (
-            <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-                <a class="navbar-brand d-inline-block align-top" href="#">
-                    <img class="peacock-brand" width="30" height="30"/>
-                    &ensp;Peacock
-                </a>
+            <nav class="navbar navbar-expand-md navContainer">
+                <div class="navLogoArea">
+                    <div class="navLogo"></div>
+                </div>
+                {/*<img class="navLogo" width="36" height="36"/>*/}
+                {/*<img class="navLogo" width="48" height="48"/>*/}
 
                 <div class="collapse navbar-collapse" id="navbarsExampleDefault">
                     <ul class="navbar-nav mr-auto">

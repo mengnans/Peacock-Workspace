@@ -1,6 +1,5 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.css';
-import './MainPageItemStyle.css';
+import './SidebarItemStyle.css';
 import {Container} from 'reactstrap';
 
 export class SidebarItem extends React.Component {
@@ -8,13 +7,16 @@ export class SidebarItem extends React.Component {
         const sideBar = this.props.isSideBarFull ? 'my-sidebar-full' : 'my-sidebar-not-full';
         const classes = `my-sidebar ${sideBar}`;
         return (
-            <Container className={classes}>
+            <Container className="my-sidebar sidebarContainer">
                 <div class="tab">
-                    <button onclick="openCity(event, 'London')" id="defaultOpen">All files</button>
-                    <button onclick="openCity(event, 'Paris')">Photos</button>
-                    <button onclick="openCity(event, 'Tokyo')">Docs</button>
-                    <img></img>
-                    <button onClick={this.props.onClick}>&lt;==</button>
+                    <div className="sidebarButtonSelected" href="#">
+                        <a herf="#">
+                            <div className="sidebarButton" id="btnFilePage"/>
+                        </a>
+                    </div>
+                    <div href="#">
+                        <div className="sidebarButton" id="btnWorkflowPage"/>
+                    </div>
                 </div>
             </Container>
         );
